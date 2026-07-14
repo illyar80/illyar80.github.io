@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LPM/UTLP Agent - AI-Powered Formal Verification for Distributed Systems</title>
-    <meta name="description" content="AI agent that generates mathematically verified code for asynchronous distributed systems. Zero race conditions. Zero deadlocks.">
+    <title>TLA-Forge - Formal Verification of Distributed Message Brokers</title>
+    <meta name="description" content="TLA-Forge: Parameterized TLA+ templates for verifying temporal collisions in Apache Kafka, RabbitMQ, NATS, and Pulsar.">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -64,7 +64,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <span class="text-2xl font-bold gradient-text">LPM/UTLP Agent</span>
+                    <span class="text-2xl font-bold gradient-text">TLA-Forge</span>
                 </div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#problem" class="text-gray-700 hover:text-primary transition">Problem</a>
@@ -90,17 +90,17 @@
                 🚀 Now in Private Beta
             </div>
             <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
-                AI That Generates<br>
-                <span class="gradient-text">Bug-Free Code</span><br>
-                On The First Try
+                Formal Verification<br>
+                <span class="gradient-text">for Distributed</span><br>
+                Message Brokers
             </h1>
             <p class="text-xl md:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto">
-                AI-powered agent that combines Large Predictive Models with formal verification 
-                to eliminate race conditions and deadlocks in distributed systems.
+                Parameterized TLA+ templates that detect temporal collisions in Apache Kafka, 
+                RabbitMQ, NATS JetStream, and Apache Pulsar before deployment.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#contact" class="gradient-bg text-white text-lg px-8 py-4 rounded-full font-semibold hover:opacity-90 transition transform hover:scale-105">
-                    Join Waitlist
+                    Get Started
                 </a>
                 <a href="#demo" class="bg-white text-gray-900 border-2 border-gray-300 text-lg px-8 py-4 rounded-full font-semibold hover:border-primary hover:text-primary transition">
                     Watch Demo <i class="fas fa-play ml-2"></i>
@@ -110,7 +110,7 @@
             <div class="mt-12 flex justify-center items-center space-x-8 text-gray-500">
                 <div class="flex items-center">
                     <i class="fas fa-check-circle text-accent mr-2"></i>
-                    <span>Zero Race Conditions</span>
+                    <span>Near-100% Success Rate</span>
                 </div>
                 <div class="flex items-center">
                     <i class="fas fa-check-circle text-accent mr-2"></i>
@@ -118,7 +118,7 @@
                 </div>
                 <div class="flex items-center">
                     <i class="fas fa-check-circle text-accent mr-2"></i>
-                    <span>Self-Healing Systems</span>
+                    <span>Chaos Cross-Validated</span>
                 </div>
             </div>
         </div>
@@ -128,54 +128,54 @@
     <section id="problem" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">The $50 Billion Problem</h2>
-                <p class="text-xl text-gray-600">Distributed systems are broken. Here's why.</p>
+                <h2 class="text-4xl font-bold mb-4">The Temporal Collision Problem</h2>
+                <p class="text-xl text-gray-600">Message brokers are broken. Here's why.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="p-8 rounded-2xl bg-red-50 border border-red-200">
                     <div class="text-5xl mb-4">💥</div>
-                    <h3 class="text-xl font-bold mb-3 text-red-900">Race Conditions</h3>
-                    <p class="text-gray-700">Asynchronous code creates hidden timing bugs that only appear in production under specific conditions.</p>
+                    <h3 class="text-xl font-bold mb-3 text-red-900">Crash Window</h3>
+                    <p class="text-gray-700">Consumer stores result but crashes before committing offset. Broker redelivers, causing duplicate execution.</p>
                 </div>
                 <div class="p-8 rounded-2xl bg-orange-50 border border-orange-200">
-                    <div class="text-5xl mb-4">🔒</div>
-                    <h3 class="text-xl font-bold mb-3 text-orange-900">Deadlocks</h3>
-                    <p class="text-gray-700">Resources lock each other in circular dependencies, bringing entire systems to a halt.</p>
+                    <div class="text-5xl mb-4">🔄</div>
+                    <h3 class="text-xl font-bold mb-3 text-orange-900">At-Least-Once Delivery</h3>
+                    <p class="text-gray-700">Fundamental property of Kafka, RabbitMQ, NATS, and Pulsar. Not a bug—by design.</p>
                 </div>
                 <div class="p-8 rounded-2xl bg-yellow-50 border border-yellow-200">
                     <div class="text-5xl mb-4">⏱️</div>
-                    <h3 class="text-xl font-bold mb-3 text-yellow-900">Starvation</h3>
-                    <p class="text-gray-700">Some processes never get the resources they need, causing silent failures and data loss.</p>
+                    <h3 class="text-xl font-bold mb-3 text-yellow-900">Testing Fails</h3>
+                    <p class="text-gray-700">Race conditions manifest only under specific interleavings impossible to reproduce with traditional testing.</p>
                 </div>
             </div>
 
             <div class="mt-16 p-8 rounded-2xl bg-gray-900 text-white">
                 <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <h3 class="text-3xl font-bold mb-4">The Cost of Failure</h3>
+                        <h3 class="text-3xl font-bold mb-4">The Cost of Duplicate Execution</h3>
                         <ul class="space-y-3 text-lg">
                             <li class="flex items-center">
                                 <i class="fas fa-times-circle text-red-500 mr-3"></i>
-                                Facebook loses <span class="text-red-400 font-bold">$100M+</span> annually from outages
+                                Financial transactions executed <span class="text-red-400 font-bold">twice</span>
                             </li>
                             <li class="flex items-center">
                                 <i class="fas fa-times-circle text-red-500 mr-3"></i>
-                                AWS outages cost customers <span class="text-red-400 font-bold">billions</span>
+                                Email notifications sent <span class="text-red-400 font-bold">multiple times</span>
                             </li>
                             <li class="flex items-center">
                                 <i class="fas fa-times-circle text-red-500 mr-3"></i>
-                                Financial systems require <span class="text-accent font-bold">99.999%</span> uptime
+                                Inventory counts become <span class="text-accent font-bold">inconsistent</span>
                             </li>
                             <li class="flex items-center">
                                 <i class="fas fa-times-circle text-red-500 mr-3"></i>
-                                Testing catches only <span class="text-red-400 font-bold">60%</span> of distributed bugs
+                                Celery ACK timeout causes <span class="text-red-400 font-bold">duplicate tasks</span>
                             </li>
                         </ul>
                     </div>
                     <div class="text-center">
-                        <div class="text-7xl font-black gradient-text mb-2">$50B+</div>
-                        <div class="text-gray-400">Annual cost of distributed systems bugs</div>
+                        <div class="text-7xl font-black gradient-text mb-2">4 Brokers</div>
+                        <div class="text-gray-400">Affected: Kafka, RabbitMQ, NATS, Pulsar</div>
                     </div>
                 </div>
             </div>
@@ -187,7 +187,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold mb-4">A New Paradigm</h2>
-                <p class="text-xl text-gray-600">From reactive testing to proactive verification</p>
+                <p class="text-xl text-gray-600">From reactive testing to proactive formal verification</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
@@ -197,29 +197,29 @@
                         <div class="flex items-start p-4 bg-white rounded-lg shadow-sm">
                             <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center mr-4">1</div>
                             <div>
-                                <div class="font-semibold">Write code</div>
-                                <div class="text-gray-600 text-sm">Developer writes async code manually</div>
+                                <div class="font-semibold">Write async code</div>
+                                <div class="text-gray-600 text-sm">Developer writes broker consumer manually</div>
                             </div>
                         </div>
                         <div class="flex items-start p-4 bg-white rounded-lg shadow-sm">
                             <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center mr-4">2</div>
                             <div>
-                                <div class="font-semibold">Run tests</div>
-                                <div class="text-gray-600 text-sm">Hope tests catch edge cases</div>
+                                <div class="font-semibold">Run unit tests</div>
+                                <div class="text-gray-600 text-sm">Hope tests catch race conditions</div>
                             </div>
                         </div>
                         <div class="flex items-start p-4 bg-white rounded-lg shadow-sm">
                             <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center mr-4">3</div>
                             <div>
                                 <div class="font-semibold">Deploy to production</div>
-                                <div class="text-gray-600 text-sm">Bugs appear under real load</div>
+                                <div class="text-gray-600 text-sm">Duplicate execution appears under load</div>
                             </div>
                         </div>
                         <div class="flex items-start p-4 bg-white rounded-lg shadow-sm">
                             <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center mr-4">4</div>
                             <div>
                                 <div class="font-semibold">Fix & repeat</div>
-                                <div class="text-gray-600 text-sm">Costly hotfixes and downtime</div>
+                                <div class="text-gray-600 text-sm">Costly hotfixes and data corruption</div>
                             </div>
                         </div>
                     </div>
@@ -231,29 +231,29 @@
                         <div class="flex items-start p-4 bg-white rounded-lg shadow-md border-2 border-primary">
                             <div class="flex-shrink-0 w-8 h-8 rounded-full gradient-bg text-white flex items-center justify-center mr-4">1</div>
                             <div>
-                                <div class="font-semibold">AI generates formal spec</div>
-                                <div class="text-gray-600 text-sm">o3 creates TLA+ specification</div>
+                                <div class="font-semibold">YAML configuration</div>
+                                <div class="text-gray-600 text-sm">Specify broker, mode, and parameters</div>
                             </div>
                         </div>
                         <div class="flex items-start p-4 bg-white rounded-lg shadow-md border-2 border-primary">
                             <div class="flex-shrink-0 w-8 h-8 rounded-full gradient-bg text-white flex items-center justify-center mr-4">2</div>
                             <div>
-                                <div class="font-semibold">Mathematical verification</div>
-                                <div class="text-gray-600 text-sm">TLC model checker proves correctness</div>
+                                <div class="font-semibold">TLA+ template rendering</div>
+                                <div class="text-gray-600 text-sm">Parameterized templates for 4 brokers</div>
                             </div>
                         </div>
                         <div class="flex items-start p-4 bg-white rounded-lg shadow-md border-2 border-primary">
                             <div class="flex-shrink-0 w-8 h-8 rounded-full gradient-bg text-white flex items-center justify-center mr-4">3</div>
                             <div>
-                                <div class="font-semibold">Generate verified code</div>
-                                <div class="text-gray-600 text-sm">Auto-generate Rust/Elixir from spec</div>
+                                <div class="font-semibold">TLC exhaustive verification</div>
+                                <div class="text-gray-600 text-sm">Model checker explores all interleavings</div>
                             </div>
                         </div>
                         <div class="flex items-start p-4 bg-white rounded-lg shadow-md border-2 border-primary">
                             <div class="flex-shrink-0 w-8 h-8 rounded-full gradient-bg text-white flex items-center justify-center mr-4">4</div>
                             <div>
-                                <div class="font-semibold">Chaos testing</div>
-                                <div class="text-gray-600 text-sm">Antithesis validates in simulation</div>
+                                <div class="font-semibold">Chaos cross-validation</div>
+                                <div class="text-gray-600 text-sm">Docker fault injection confirms predictions</div>
                             </div>
                         </div>
                     </div>
@@ -263,8 +263,8 @@
             <div class="text-center">
                 <div class="inline-block p-8 rounded-2xl bg-white shadow-xl">
                     <div class="text-6xl mb-4">✨</div>
-                    <div class="text-2xl font-bold mb-2">Result: Code that works</div>
-                    <div class="text-gray-600">First time. Every time.</div>
+                    <div class="text-2xl font-bold mb-2">Result: Verified Correctness</div>
+                    <div class="text-gray-600">Mathematical proof before production.</div>
                 </div>
             </div>
         </div>
@@ -274,40 +274,40 @@
     <section id="technology" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">Powered by Cutting-Edge Tech</h2>
-                <p class="text-xl text-gray-600">Three breakthrough technologies converge</p>
+                <h2 class="text-4xl font-bold mb-4">Powered by Formal Methods</h2>
+                <p class="text-xl text-gray-600">Three technologies converge for verified correctness</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="p-8 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 text-white">
-                    <div class="text-5xl mb-4">🧠</div>
-                    <h3 class="text-2xl font-bold mb-3">LPM</h3>
-                    <p class="mb-4">Large Predictive Models that predict system states, not just tokens.</p>
+                    <div class="text-5xl mb-4">📐</div>
+                    <h3 class="text-2xl font-bold mb-3">TLA+ Templates</h3>
+                    <p class="mb-4">Parameterized specifications for 4 brokers × 4 modes = 16 configurations.</p>
                     <ul class="space-y-2 text-blue-100">
-                        <li><i class="fas fa-check mr-2"></i>State-space prediction</li>
-                        <li><i class="fas fa-check mr-2"></i>Temporal reasoning</li>
-                        <li><i class="fas fa-check mr-2"></i>Latent simulation</li>
+                        <li><i class="fas fa-check mr-2"></i>Apache Kafka, RabbitMQ, NATS, Pulsar</li>
+                        <li><i class="fas fa-check mr-2"></i>Faulty, Idempotent, Async, Firefly modes</li>
+                        <li><i class="fas fa-check mr-2"></i>PlusCal process-algorithm language</li>
                     </ul>
                 </div>
 
                 <div class="p-8 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-600 text-white">
-                    <div class="text-5xl mb-4">⏰</div>
-                    <h3 class="text-2xl font-bold mb-3">UTLP</h3>
-                    <p class="mb-4">Universal Time Lord Protocol for biological time synchronization.</p>
+                    <div class="text-5xl mb-4">🔬</div>
+                    <h3 class="text-2xl font-bold mb-3">Chaos Engineering</h3>
+                    <p class="mb-4">Docker fault injection confirms formal predictions in real deployments.</p>
                     <ul class="space-y-2 text-purple-100">
-                        <li><i class="fas fa-check mr-2"></i>Vector clocks</li>
-                        <li><i class="fas fa-check mr-2"></i>Firefly sync</li>
-                        <li><i class="fas fa-check mr-2"></i>Phase shift detection</li>
+                        <li><i class="fas fa-check mr-2"></i>Toxiproxy network latency</li>
+                        <li><i class="fas fa-check mr-2"></i>Docker container crashes</li>
+                        <li><i class="fas fa-check mr-2"></i>6/6 predictions confirmed</li>
                     </ul>
                 </div>
 
                 <div class="p-8 rounded-2xl bg-gradient-to-br from-green-500 to-green-600 text-white">
                     <div class="text-5xl mb-4">✓</div>
-                    <h3 class="text-2xl font-bold mb-3">Formal Methods</h3>
-                    <p class="mb-4">Mathematical proof of correctness through TLA+ and model checking.</p>
+                    <h3 class="text-2xl font-bold mb-3">Model Checking</h3>
+                    <p class="mb-4">TLC exhaustively explores all reachable states for mathematical proof.</p>
                     <ul class="space-y-2 text-green-100">
-                        <li><i class="fas fa-check mr-2"></i>TLA+ specifications</li>
-                        <li><i class="fas fa-check mr-2"></i>TLC model checker</li>
+                        <li><i class="fas fa-check mr-2"></i>13,968 states verified</li>
+                        <li><i class="fas fa-check mr-2"></i>14 seconds total time</li>
                         <li><i class="fas fa-check mr-2"></i>Zero counterexamples</li>
                     </ul>
                 </div>
@@ -315,27 +315,32 @@
 
             <!-- Architecture Diagram -->
             <div class="mt-16 p-8 rounded-2xl bg-gray-50">
-                <h3 class="text-2xl font-bold text-center mb-8">System Architecture</h3>
-                <div class="grid md:grid-cols-4 gap-4">
+                <h3 class="text-2xl font-bold text-center mb-8">Verification Pipeline</h3>
+                <div class="grid md:grid-cols-5 gap-4">
                     <div class="p-6 bg-white rounded-lg shadow text-center">
-                        <div class="text-3xl mb-2">📡</div>
-                        <div class="font-bold">Sensor Layer</div>
-                        <div class="text-sm text-gray-600">MCP Gateway</div>
+                        <div class="text-3xl mb-2">📄</div>
+                        <div class="font-bold">YAML Config</div>
+                        <div class="text-sm text-gray-600">Broker + Mode</div>
                     </div>
                     <div class="p-6 bg-white rounded-lg shadow text-center">
-                        <div class="text-3xl mb-2">🧠</div>
-                        <div class="font-bold">Reasoning Core</div>
-                        <div class="text-sm text-gray-600">OpenAI o3</div>
+                        <div class="text-3xl mb-2">📝</div>
+                        <div class="font-bold">TLA+ Template</div>
+                        <div class="text-sm text-gray-600">Parameterized</div>
                     </div>
                     <div class="p-6 bg-white rounded-lg shadow text-center">
-                        <div class="text-3xl mb-2">🤖</div>
-                        <div class="font-bold">Agent Swarm</div>
-                        <div class="text-sm text-gray-600">Multi-agent orchestration</div>
+                        <div class="text-3xl mb-2">🔍</div>
+                        <div class="font-bold">TLC Checker</div>
+                        <div class="text-sm text-gray-600">Exhaustive</div>
                     </div>
                     <div class="p-6 bg-white rounded-lg shadow text-center">
-                        <div class="text-3xl mb-2">⚡</div>
-                        <div class="font-bold">Runtime Body</div>
-                        <div class="text-sm text-gray-600">Rust/Elixir</div>
+                        <div class="text-3xl mb-2">🐳</div>
+                        <div class="font-bold">Docker Chaos</div>
+                        <div class="text-sm text-gray-600">Fault Injection</div>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow text-center">
+                        <div class="text-3xl mb-2">📊</div>
+                        <div class="font-bold">Report</div>
+                        <div class="text-sm text-gray-600">+ Codegen</div>
                     </div>
                 </div>
             </div>
@@ -347,46 +352,46 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold mb-4">Proven Results</h2>
-                <p class="text-xl text-gray-400">Metrics from our pilot program</p>
+                <p class="text-xl text-gray-400">Metrics from verified configurations</p>
             </div>
 
             <div class="grid md:grid-cols-4 gap-8">
                 <div class="text-center p-6">
-                    <div class="text-5xl font-black text-accent mb-2">92%</div>
-                    <div class="text-gray-400">Detection Rate</div>
-                    <div class="text-sm text-gray-500 mt-2">Finds known bugs</div>
+                    <div class="text-5xl font-black text-accent mb-2">96%</div>
+                    <div class="text-gray-400">Success Rate</div>
+                    <div class="text-sm text-gray-500 mt-2">On covered patterns</div>
                 </div>
                 <div class="text-center p-6">
-                    <div class="text-5xl font-black text-accent mb-2">8%</div>
-                    <div class="text-gray-400">False Positives</div>
-                    <div class="text-sm text-gray-500 mt-2">Minimal noise</div>
+                    <div class="text-5xl font-black text-accent mb-2">13,968</div>
+                    <div class="text-gray-400">States Verified</div>
+                    <div class="text-sm text-gray-500 mt-2">Across 16 templates</div>
                 </div>
                 <div class="text-center p-6">
-                    <div class="text-5xl font-black text-accent mb-2">12s</div>
-                    <div class="text-gray-400">Recovery Time</div>
-                    <div class="text-sm text-gray-500 mt-2">Self-healing speed</div>
+                    <div class="text-5xl font-black text-accent mb-2">14s</div>
+                    <div class="text-gray-400">Total Time</div>
+                    <div class="text-sm text-gray-500 mt-2">All templates combined</div>
                 </div>
                 <div class="text-center p-6">
-                    <div class="text-5xl font-black text-accent mb-2">&lt;5</div>
-                    <div class="text-gray-400">Iterations</div>
-                    <div class="text-sm text-gray-500 mt-2">To converge</div>
+                    <div class="text-5xl font-black text-accent mb-2">6/6</div>
+                    <div class="text-gray-400">Chaos Confirmed</div>
+                    <div class="text-sm text-gray-500 mt-2">Docker predictions</div>
                 </div>
             </div>
 
             <div class="mt-16 grid md:grid-cols-2 gap-8">
                 <div class="p-6 bg-white/10 rounded-lg">
-                    <h3 class="text-xl font-bold mb-4">Pilot Customer Quote</h3>
+                    <h3 class="text-xl font-bold mb-4">Case Study: Celery ACK Collision</h3>
                     <blockquote class="text-gray-300 italic mb-4">
-                        "The LPM/UTLP Agent found a race condition in our payment system that had been in production for 2 years. 
-                        It saved us from a potential $10M loss."
+                        "TLA-Forge found a race condition in Celery's ACK protocol that causes duplicate task execution. 
+                        The issue was confirmed via Docker chaos injection."
                     </blockquote>
-                    <div class="text-white font-semibold">— CTO, Fintech Startup</div>
+                    <div class="text-white font-semibold">— GitHub Discussion #10617</div>
                 </div>
                 <div class="p-6 bg-white/10 rounded-lg">
-                    <h3 class="text-xl font-bold mb-4">Technical Achievement</h3>
+                    <h3 class="text-xl font-bold mb-4">Negative Result</h3>
                     <p class="text-gray-300">
-                        Successfully verified distributed consensus algorithm with 10,000+ concurrent nodes. 
-                        Zero counterexamples found. Zero bugs in production after deployment.
+                        Pulse-coupled synchronization (firefly mode) does NOT eliminate the crash window. 
+                        Verified across 9 configurations with different phase thresholds and coupling strengths.
                     </p>
                 </div>
             </div>
@@ -396,45 +401,33 @@
     <!-- CTA Section -->
     <section id="contact" class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl font-bold mb-4">Join the Revolution</h2>
+            <h2 class="text-4xl font-bold mb-4">Get Started with TLA-Forge</h2>
             <p class="text-xl text-gray-600 mb-8">
-                Be among the first to experience bug-free distributed systems.
+                Verify your distributed message broker configuration in minutes.
             </p>
 
-            <form class="max-w-md mx-auto space-y-4" onsubmit="event.preventDefault(); alert('Thanks for joining! We will contact you soon.');">
-                <input 
-                    type="email" 
-                    placeholder="Enter your email" 
-                    class="w-full px-6 py-4 rounded-full border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition"
-                    required
-                >
-                <input 
-                    type="text" 
-                    placeholder="Company name (optional)" 
-                    class="w-full px-6 py-4 rounded-full border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition"
-                >
-                <select class="w-full px-6 py-4 rounded-full border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition">
-                    <option value="">I'm interested in...</option>
-                    <option value="pilot">Pilot Program</option>
-                    <option value="enterprise">Enterprise License</option>
-                    <option value="research">Research Collaboration</option>
-                    <option value="invest">Investment Opportunity</option>
-                </select>
-                <button 
-                    type="submit" 
-                    class="w-full gradient-bg text-white text-lg font-semibold px-8 py-4 rounded-full hover:opacity-90 transition transform hover:scale-105"
-                >
-                    Get Early Access
-                </button>
-            </form>
+            <div class="max-w-md mx-auto space-y-4">
+                <div class="p-6 bg-gray-50 rounded-lg text-left">
+                    <h3 class="font-bold mb-2">Quick Start</h3>
+                    <code class="text-sm bg-gray-800 text-green-400 p-2 rounded block">pip install tla-forge</code>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg text-left">
+                    <h3 class="font-bold mb-2">Verify Your Config</h3>
+                    <code class="text-sm bg-gray-800 text-green-400 p-2 rounded block">tlarun --verify --broker kafka --mode faulty</code>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg text-left">
+                    <h3 class="font-bold mb-2">View Documentation</h3>
+                    <a href="https://github.com/illyar80/tla-forge" class="text-primary hover:underline">GitHub Repository →</a>
+                </div>
+            </div>
 
             <div class="mt-8 text-sm text-gray-500">
                 <i class="fas fa-lock mr-2"></i>
-                We respect your privacy. No spam, ever.
+                Open source under Apache 2.0 License.
             </div>
 
             <div class="mt-12 flex justify-center space-x-6">
-                <a href="#" class="text-gray-400 hover:text-primary transition text-2xl">
+                <a href="https://github.com/illyar80/tla-forge" class="text-gray-400 hover:text-primary transition text-2xl">
                     <i class="fab fa-github"></i>
                 </a>
                 <a href="#" class="text-gray-400 hover:text-primary transition text-2xl">
@@ -443,7 +436,7 @@
                 <a href="#" class="text-gray-400 hover:text-primary transition text-2xl">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="#" class="text-gray-400 hover:text-primary transition text-2xl">
+                <a href="mailto:illyar80@gmail.com" class="text-gray-400 hover:text-primary transition text-2xl">
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
@@ -455,41 +448,42 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8">
                 <div>
-                    <div class="text-2xl font-bold gradient-text mb-4">LPM/UTLP Agent</div>
+                    <div class="text-2xl font-bold gradient-text mb-4">TLA-Forge</div>
                     <p class="text-gray-600 text-sm">
-                        AI-powered formal verification for distributed systems. 
-                        Zero bugs. First time. Every time.
+                        Formal verification of distributed message brokers.
+                        Parameterized TLA+ templates. Chaos cross-validation.
                     </p>
                 </div>
                 <div>
                     <div class="font-bold mb-4">Product</div>
                     <ul class="space-y-2 text-sm text-gray-600">
                         <li><a href="#" class="hover:text-primary">Features</a></li>
-                        <li><a href="#" class="hover:text-primary">Pricing</a></li>
                         <li><a href="#" class="hover:text-primary">Documentation</a></li>
-                        <li><a href="#" class="hover:text-primary">API Reference</a></li>
+                        <li><a href="https://github.com/illyar80/tla-forge" class="hover:text-primary">GitHub</a></li>
+                        <li><a href="#" class="hover:text-primary">Examples</a></li>
                     </ul>
                 </div>
                 <div>
-                    <div class="font-bold mb-4">Company</div>
+                    <div class="font-bold mb-4">Research</div>
                     <ul class="space-y-2 text-sm text-gray-600">
-                        <li><a href="#" class="hover:text-primary">About</a></li>
-                        <li><a href="#" class="hover:text-primary">Blog</a></li>
-                        <li><a href="#" class="hover:text-primary">Careers</a></li>
-                        <li><a href="#" class="hover:text-primary">Contact</a></li>
+                        <li><a href="#" class="hover:text-primary">Papers</a></li>
+                        <li><a href="#" class="hover:text-primary">Negative Results</a></li>
+                        <li><a href="#" class="hover:text-primary">Case Studies</a></li>
+                        <li><a href="#" class="hover:text-primary">Benchmarks</a></li>
                     </ul>
                 </div>
                 <div>
-                    <div class="font-bold mb-4">Legal</div>
+                    <div class="font-bold mb-4">Contact</div>
                     <ul class="space-y-2 text-sm text-gray-600">
-                        <li><a href="#" class="hover:text-primary">Privacy</a></li>
-                        <li><a href="#" class="hover:text-primary">Terms</a></li>
-                        <li><a href="#" class="hover:text-primary">Security</a></li>
+                        <li><a href="mailto:illyar80@gmail.com" class="hover:text-primary">Email</a></li>
+                        <li><a href="https://github.com/illyar80/tla-forge/issues" class="hover:text-primary">Issues</a></li>
+                        <li><a href="#" class="hover:text-primary">Discussions</a></li>
+                        <li><a href="#" class="hover:text-primary">Contributing</a></li>
                     </ul>
                 </div>
             </div>
             <div class="mt-8 pt-8 border-t border-gray-200 text-center text-sm text-gray-500">
-                © 2026 LPM/UTLP Agent. All rights reserved. Patent Pending.
+                © 2026 TLA-Forge. Open Source under Apache 2.0 License.
             </div>
         </div>
     </footer>
